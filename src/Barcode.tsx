@@ -21,7 +21,8 @@ function BarCode() {
      <Condicional condicao={exibe}>
       <BarcodeScannerComponent
         width={500}
-        height={500}       
+        height={500}        
+        torch={true}       
           onUpdate={(err, result) => {
             if (result) {
               console.log("Código de barras lido: " + result.getText());
